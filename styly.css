@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(./pojistenci.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: whitesmoke;
+}   
+
+nav{
+    background: rgb(44,53,49);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+#logo{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 80px;
+    padding: 0 20px;
+}
+
+#logo span{
+    color: rgb(17,100,102);
+    text-shadow: 1px -1px 1px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a{
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+nav ul a:hover,
+.aktivni a {
+    background: rgb(17,100,102);
+}
+
+.kontejner-formular{
+    width: 500px;
+    background-color: rgba(44,53,49, 0.8);
+    margin: 130px auto 50px auto;
+    color: white; 
+    text-align: center; 
+    border-radius: 5px;
+    padding: 30px; 
+    box-shadow: 0 5px 30px; 
+}
+
+h2{
+    margin-bottom: 10px; 
+}
+
+.formular-polozky{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px; 
+}
+
+.formular-polozky input{
+    height: 100%;
+    width: 100%; 
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#ulozit{
+    width: 25%;
+    padding: 10px;
+    margin-top: 15px;
+    background: white;
+    color: rgb(17,100,102);
+    border: solid 1px rgb(17,100,102);
+    border-radius: 10px;
+    font-weight: bold; 
+}
+
+#ulozit:hover{
+    background: rgb(17,100,102);
+    color: white;
+    border: 1px solid white;
+}
+
+.kontejner-pojistenci{
+    width: auto;
+    background-color: rgba(44,53,49, 0.8);
+    color: white; 
+    text-align: center; 
+    padding: 30px; 
+    box-shadow: 0 5px 30px; 
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr{
+    border-bottom: 1px solid rgb(44,53,49);
+}
+
+table tr:hover{
+    background: rgba(17,100,102, 0.3);
+}
+
+table th, td{
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+table th{
+    background-color: rgba(17,100,102, 0.8);
+}
+
+footer {
+    box-sizing: border-box;
+    font-weight: bold;
+    color: rgb(44,53,49);
+    text-align: center;
+    padding: 40px;
+}

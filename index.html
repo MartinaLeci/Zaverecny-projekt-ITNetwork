@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registrace do PojišťovnyABC">
+    <link rel="stylesheet" href="styly.css" type="text/css">
+    <title>Pojišťovna ABC</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <label id="logo">Pojišťovna<span>ABC</span></label>
+            <ul>
+                <li><a href="#">Domů</a></li>
+                <li class="aktivni"><a href="index.html">Pojištění osob</a></li>
+                <li><a href="#">Pojištění majetku</a></li>
+                <li><a href="#">Sjednat online</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="kontejner-formular">
+        <h2>Nový pojištěnec</h2>
+        <form>
+            <div class="formular-polozky">
+                <label for="jmeno">Jméno</label>
+                <input type="text" id="jmeno" placeholder="Vyplňte své jméno" required />
+            </div>
+
+            <div class="formular-polozky">
+                <label for="prijmeni">Příjmení</label>
+                <input type="text" id="prijmeni" placeholder="Vyplňte své příjmení" required />
+            </div>
+
+            <div class="formular-polozky">
+                <label for="vek">Věk</label>
+                <input type="number" id="vek" placeholder="Vyplňte svůj věk" required />
+            </div>
+
+            <div class="formular-polozky">
+                <label for="telefon">Telefonní číslo</label>
+                <input type="number" id="telefon" placeholder="Vyplňte své telefonní číslo" required />
+            </div>
+
+            <button id="ulozit"> Uložit</button>
+        </form>
+    </div>
+
+    <div class="kontejner-pojistenci">
+        <h2>Stávající pojištěnci</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Jméno</th>
+                    <th>Příjmení</th>
+                    <th>Věk</th>
+                    <th>Telefonní číslo</th>
+                </tr>
+            </thead>
+        </table>
+        <table id="tabulka"></table>
+    </div>
+
+    <footer>
+        &copy; PojišťovnaABC 2023
+    </footer>
+
+    <script src="./pojistenci.js"></script>
+    <script src="./pojistenec.js"></script>
+    <script src="./obsluha.js"></script>
+
+</body>
+
+</html>
